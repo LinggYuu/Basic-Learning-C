@@ -1,3 +1,9 @@
 ﻿  yi.cpp
 d:\github\basic-learning-c\project1\project1\yi.cpp(17): warning C4101: “i”: 未引用的局部变量
-  Project1.vcxproj -> D:\github\Basic-Learning-C\Project1\Debug\Project1.exe
+d:\github\basic-learning-c\project1\project1\yi.cpp(223): error C3861: “malloc”: 找不到标识符
+d:\github\basic-learning-c\project1\project1\yi.cpp(230): error C2084: 函数“int main(void)”已有主体
+  d:\github\basic-learning-c\project1\project1\yi.cpp(16): note: 参见“main”的前一个定义
+d:\github\basic-learning-c\project1\project1\yi.cpp(235): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1274): note: 参见“scanf”的声明
+d:\github\basic-learning-c\project1\project1\yi.cpp(242): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1274): note: 参见“scanf”的声明
