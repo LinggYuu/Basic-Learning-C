@@ -195,4 +195,98 @@ void print(const struct point* p) //用const表明在这个函数中传入的指针不会被修改
 
 
 
+
+
+//结构数组
+struct date 
+{
+	int a;
+	int b;
+	int c;
+};
+struct time
+{
+	int d;
+	int e;
+	int f;
+};
+struct date dates[100];
+struct date dates[] = {
+	{4,5,2000},{2,4,2020}
+};
+
+
+
 //结构中的结构
+
+struct dateAndTime 
+{
+	struct date sdate;
+	struct time stime;
+};
+
+//嵌套结构
+struct point
+{
+	int x;
+	int y;
+};
+
+struct rectangle
+{
+	struct point p1;
+	struct point p2;
+};
+
+struct rectangle r;
+//可以有
+//r.p1.x;
+//r.p2.x;
+//r.p1.y;
+//r.p2.y;
+
+struct rectangle *rp = &r;
+//r.p1.x;
+//rp->p1.x;
+//(r.p1).x;
+//(rp->p1).x;
+//四种等价
+//没有re->p1->x,因为p1不是指针
+
+
+
+
+
+//类型定义
+
+//自定义数据类型(typedef)
+
+//C提供 typedef功能来声明一个已有的数据类型的新名字
+
+typedef int Length;
+//使 length 成为int类型的别名
+
+Length a, b, len;
+Length numbers[10];
+
+
+typedef struct ADate //ADate是原类型名.  struct ADate
+{
+	int month;
+	int day;
+	int year;
+} Date;//Date是新类型名
+//struct ADate 就是 Date
+
+Date d = { 1,2,3 };
+struct ADate c = { 2,3,4 };
+
+typedef struct 
+{
+	int month;
+	int day;
+	int year;
+} Datee;
+
+
+//typedef *char[10] Strings;//Strings是10个字符串的数组的类型
